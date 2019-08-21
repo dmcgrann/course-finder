@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/course_finder"
+
+CourseFinder::CLI.new.call
+
