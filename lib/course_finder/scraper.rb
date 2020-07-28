@@ -1,7 +1,7 @@
 class CourseFinder::Scraper
 
   def self.courses
-    doc = Nokogiri::HTML(open("http://bulletins.wayne.edu/undergraduate/school-business/finance/"))
+    doc = Nokogiri::HTML(open("https://bulletins.wayne.edu/undergraduate/general-information/general-education/courses/"))
 
     overview = doc.css("div#textcontainer.tab_content div.WordSection19 p").text
     CourseFinder::Course.set_overview(overview)

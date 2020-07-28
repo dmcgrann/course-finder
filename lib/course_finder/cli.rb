@@ -43,17 +43,17 @@ class CourseFinder::CLI
         puts ""
         puts "Goodbye!".colorize(:light_cyan)
         puts ""
-        
+
       else
         puts "Invalid entry. Try again"
       end
     end
   end
-  
+
 
   def course_list
     CourseFinder::Course.all.each_with_index do |c, i|
-      puts "#{i+1}. #{c.id}"
+      puts "#{i+1}. #{c.id} #{c.extra} #{c.description}"
     end
   end
 
