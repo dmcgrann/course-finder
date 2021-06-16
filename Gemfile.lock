@@ -23,13 +23,12 @@ GEM
     rspec-support (3.10.2)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-19
 
 DEPENDENCIES
-  bundler (~> 2.1.4)
   course_finder!
   rake (~> 12.3.3)
   rspec (~> 3.0)
 
 BUNDLED WITH
-   2.1.4
+   2.2.20
