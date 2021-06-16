@@ -53,7 +53,7 @@ class CourseFinder::CLI
 
   def course_list
     CourseFinder::Course.all.each_with_index do |c, i|
-      puts "#{i+1}. #{c.id} #{c.extra} #{c.description}"
+      puts "#{i+1}. #{c.id}"
     end
   end
 
